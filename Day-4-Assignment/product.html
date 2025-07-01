@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        .product-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            font-family: 'Verdana', sans-serif;
+            width: 300px;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h2 {
+            margin-top: 0;
+        }
+
+        .product-card .price {
+            color: red;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }   
+        .product-card button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        <h2>Badminton racket</h2>
+        <p class="price">4000 INR</p>
+        <button>Buy Now</button>
+    </div>
+</body>
+</html>

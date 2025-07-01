@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Preferences - Survey Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    label {
+      margin-right: 20px;
+    }
+    th, td {
+      padding: 10px;
+    }
+    button {
+      margin: 2px;
+    }
+    .outer-border-table {
+      border: none;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    .checkbox-table td {
+      padding-right: 40px;
+      padding-bottom: 8px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 140px;
+      padding: 5px 8px;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+    .radio-group {
+      display: flex;
+      gap: 18px;
+    }
+    .matrix-table {
+      border: 2px solid #333;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Food Preferences - Survey Form</h1>
+  <h5>Please fill out and submit the Survey form at the earliest</h5>
+  <hr>
+  <form method="post">
+    <table class="outer-border-table">
+      <tr>
+        <td><label for="user">1. Name:</label></td>
+        <td><input type="text" id="user" name="user" required></td>
+      </tr>
+      <tr>
+        <td><label for="age">2. Age:</label></td>
+        <td><input type="number" id="age" name="age" min="1" max="120" required></td>
+      </tr>
+      <tr>
+        <td><label>3. Where do you eat most often?</label></td>
+        <td>
+          <input type="radio" id="home" name="location" value="Home" required>
+          <label for="home">Home</label>
+          <input type="radio" id="work" name="location" value="Work/School">
+          <label for="work">at work / school</label>
+          <input type="radio" id="restaurant" name="location" value="Restaurant">
+          <label for="restaurant">at a restaurant</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><label>4. Specify, how often</label><br><br>
+          <table class="matrix-table">
+            <tr>
+              <th></th>
+              <th>every day</th>
+              <th>a few time a week</th>
+              <th>once a week</th>
+              <th>several times a month</th>
+              <th>once a month</th>
+              <th>less often than once a month</th>
+            </tr>
+            <tr>
+              <td>You prepare your own meal</td>
+              <td><input type="radio" name="you_prepare" value="every_day"></td>
+              <td><input type="radio" name="you_prepare" value="few_times_week"></td>
+              <td><input type="radio" name="you_prepare" value="once_week"></td>
+              <td><input type="radio" name="you_prepare" value="several_times_month"></td>
+              <td><input type="radio" name="you_prepare" value="once_month"></td>
+              <td><input type="radio" name="you_prepare" value="less_often"></td>
+            </tr>
+            <tr>
+              <td>You eat out</td>
+              <td><input type="radio" name="you_eat_out" value="every_day"></td>
+              <td><input type="radio" name="you_eat_out" value="few_times_week"></td>
+              <td><input type="radio" name="you_eat_out" value="once_week"></td>
+              <td><input type="radio" name="you_eat_out" value="several_times_month"></td>
+              <td><input type="radio" name="you_eat_out" value="once_month"></td>
+              <td><input type="radio" name="you_eat_out" value="less_often"></td>
+            </tr>
+            <tr>
+              <td>You order food for home</td>
+              <td><input type="radio" name="you_order_food" value="every_day"></td>
+              <td><input type="radio" name="you_order_food" value="few_times_week"></td>
+              <td><input type="radio" name="you_order_food" value="once_week"></td>
+              <td><input type="radio" name="you_order_food" value="several_times_month"></td>
+              <td><input type="radio" name="you_order_food" value="once_month"></td>
+              <td><input type="radio" name="you_order_food" value="less_often"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label>5. The most common places you visit are restaurant serving food of origin :</label><br><br>
+          <table class="checkbox-table">
+            <tr>
+              <td>
+                <input type="checkbox" id="Polish" name="food_origin_preference" value="Polish">
+                <label for="Polish">Polish</label>
+              </td>
+              <td>
+                <input type="checkbox" id="Indian" name="food_origin_preference" value="Indian">
+                <label for="Indian">Indian</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="Italian" name="food_origin_preference" value="Italian">
+                <label for="Italian">Italian</label>
+              </td>
+              <td>
+                <input type="checkbox" id="Spanish" name="food_origin_preference" value="Spanish">
+                <label for="Spanish">Spanish</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="Asian" name="food_origin_preference" value="Asian">
+                <label for="Asian">Asian</label>
+              </td>
+              <td>
+                <input type="checkbox" id="Chinese" name="food_origin_preference" value="Chinese">
+                <label for="Chinese">Chinese</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="American" name="food_origin_preference" value="American">
+                <label for="American">American</label>
+              </td>
+              <td>
+                <input type="checkbox" id="Other" name="food_origin_preference" value="Other">
+                <label for="Other">Other</label>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><label>6. Given an option would you go Vegan?</label></td>
+        <td>
+          <input type="radio" id="vegan_yes" name="vegan" value="Yes">
+          <label for="vegan_yes">Sure</label>
+          <input type="radio" id="vegan_no" name="vegan" value="No">
+          <label for="vegan_no">No</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
