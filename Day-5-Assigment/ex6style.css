@@ -1,0 +1,66 @@
+:root {
+  --bg-color: #0b0c1e;
+  --text-color: #e0e0ff;
+  --highlight: #7f5af0;
+  --glow: #00f0ff;
+  --font-main: 'Poppins', sans-serif;
+  --font-title: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, var(--bg-color) 0%, #000000 100%);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.galaxy {
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--highlight);
+  border-radius: 15px;
+  box-shadow: 0 0 30px var(--glow);
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: 24px;
+}
+
+.galaxy::before {
+  content: "🌌 Galaxy Zone";
+  display: block;
+  font-size: 20px;
+  color: var(--highlight);
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px var(--highlight);
+}
+
+.solar-system {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(127, 90, 240, 0.1);
+  border-left: 3px solid var(--highlight);
+  font-size: 20px;
+}
+
+.planets {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 240, 255, 0.1);
+  border-left: 3px dashed var(--glow);
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Extras */
+.star {
+  color: #ffd700;
+  font-size: 28px;
+  margin-right: 5px;
+}

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #f9f9f9, #e6e6fa);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.knowMoreBtn {
+  margin-top: 20px;
+}
+
+.knowMoreBtn a {
+  padding: 12px 24px;
+  background-color: #001f8f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.knowMoreBtn a:hover {
+  background-color: darkorange;
+  transform: scale(1.05);
+}
+
+.knowMoreBtn a:visited {
+  color: white;
+}
+
+.knowMoreBtn a:active {
+  color: black;
+}
