@@ -1,62 +1,24 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-direction: column;
-  background: linear-gradient(135deg, #ffe6f7, #f3f4ff);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f2f2f2;
 }
-
 
 .btn {
-  background: linear-gradient(145deg, #126163, #40b6ff);
-  color: white;
-  border: none;
-  padding: 14px 32px;
-  font-size: 1rem;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
-  letter-spacing: 1px;
   position: relative;
-  overflow: hidden;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: rgb(255, 180, 180);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: top 0.5s, left 0.5s, box-shadow 1s ease, background-color 1s ease;
 }
-
 
 .btn:hover {
-  background: linear-gradient(145deg, #ff3c8f, #e1006c);
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(225, 0, 108, 0.35);
-}
-
-
-.btn:active::after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: ripple 0.6s ease-out;
-  pointer-events: none;
-}
-
-@keyframes ripple {
-  to {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0;
-  }
+  top: 1px;
+  left: 1px;
+  box-shadow: 3px 3px 0px rgb(0, 0, 0);
+  background-color: rgb(255, 111, 111);
 }

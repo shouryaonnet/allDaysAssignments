@@ -1,71 +1,40 @@
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #1f1c2c, #928dab);
-  color: #fff;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px;
 }
-
 
 .container {
-  max-width: 700px;
-  margin: 40px auto;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,255,255,0.2);
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  max-width: 600px;
 }
 
 h3 {
-  font-size: 28px;
+  display: inline-block;
+  font-size: 20px;
   margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
 }
 
-
-p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #e0e0e0;
+.container .new::after {
+  content: 'New';
+  font-size: 13px;
+  color: white;
+  background-color: goldenrod;
+  margin-left: 10px;
+  padding: 4px 12px;
+  border-radius: 5px;
 }
 
-
-.new::before {
-  content: "NEW";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #00ff9c;
-  color: #000;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 8px;
-  transform: translate(-110%, 10%);
-  box-shadow: 0 0 5px #00ff9c;
-}
-
-
-.trending::after {
-  content: "TRENDING";
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #ff5e5e;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 8px;
-  transform: translate(110%, 10%);
-  box-shadow: 0 0 5px #ff5e5e;
+.container .trending::after {
+  content: 'Trending';
+  font-size: 13px;
+  color: white;
+  background-color: palevioletred;
+  margin-left: 10px;
+  padding: 4px 12px;
+  border-radius: 5px;
 }

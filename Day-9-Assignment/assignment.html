@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Task Runner</h1>
+
+  <div class="card">
+    <label for="alarmTime">Set Alarm Time:</label>
+    <input type="datetime-local" id="alarmTime">
+    <label for="alarmMsg">Alarm Message:</label>
+    <input type="text" id="alarmMsg">
+    <button onclick="setAlarmTime()">Activate Alarm</button>
+  </div>
+
+  <div class="card">
+    <label for="amount">Amount (₹):</label>
+    <input type="number" id="amount">
+    <label for="taxRates">Tax Rates (% comma-separated):</label>
+    <input type="text" id="taxRates" placeholder="e.g. 5,12,18">
+    <button onclick="computeTax()">Compute Tax</button>
+  </div>
+
+  <div class="card">
+    <label for="countStart">Countdown From:</label>
+    <input type="number" id="countStart">
+    <button onclick="runCountdown()">Begin Countdown</button>
+  </div>
+
+  <div class="card">
+    <label for="evenCheck">Number to check even:</label>
+    <input type="number" id="evenCheck">
+    <button onclick="checkIfEven()">Check</button>
+  </div>
+
+  <div class="card">
+    <label>Number A:</label>
+    <input type="number" id="numA">
+    <label>Number B:</label>
+    <input type="number" id="numB">
+    <label>Choose Operation:</label>
+    <select id="opSelect">
+      <option value="add">Add</option>
+      <option value="multiply">Multiply</option>
+    </select>
+    <button onclick="doMath()">Execute</button>
+  </div>
+
+  <div class="log" id="resultBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
